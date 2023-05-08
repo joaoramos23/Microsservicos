@@ -1,3 +1,3 @@
-<h1>Business Intelligence, Datawarehouse e ETL</h1>
-<p>Repositório destinado a exercícios e projetos em Microsseriços.</p>
+<h1>Microsserviços: padrões de projeto, explorando os conceitos e tomada de decisões</h1>
+<p>Repositório destinado a exercícios e projetos voltados ao conceito de Microsserviços.</p>
 

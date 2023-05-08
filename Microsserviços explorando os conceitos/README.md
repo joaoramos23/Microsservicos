@@ -7,15 +7,15 @@
 - Versionamento de APIs.
 - Manter equipes separadas, donas de cada serviço.
 
-Pense antes de implementar:
+<h3>Pense antes de implementar:</h3>
 - Desenhe um fluxo real usando uma arquitetura de microsserviços. Desta forma os problemas de cada abordagem surgirão.
 
-Onde manter o microsserviços:
+<h3>Onde manter o microsserviços:</h3>
 - Máquinas virtuais.
 - Sistemas em Cloud.
 - Containers.
 
-Etapas necessárias para criar um novo serviço:
+<h3>Etapas necessárias para criar um novo serviço:</h3>
 - Configurar repositório para versionarmos nosso código.
 - Escolher entre monorepositório ou multirepositório.
 - Integração e entrega contínuas (CI e CD).
@@ -41,47 +41,47 @@ Padronizando a criação.
 - Falhas em cascata.
 - Performance prejudicada. 
 
-Comunicação direta:
+<h3>Comunicação direta:</h3>
 - Diversos cenários nos obrigam a realizar "chamadas" e esperar por suas respostas.
 - Isso é o que conhecemos como comunicação síncrona.
 
-Como se comunicar (direta):
+<h3>Como se comunicar (direta):</h3>
 - HTTP (API RESTful).
 - gRPC.
 - Protocolos personalizados.
 
-Comunicação indireta:
+<h3>Comunicação indireta:</h3>
 - Existem cenários onde a resposta não precisa ser obtida imediatamente.
 
-Como se comunicar (indireta):
+<h3>Como se comunicar (indireta):</h3>
 - CQRS (background tasks).
 - Eventos (mensageria).
 
-Falhas em comunicação síncrona:
+<h3>Falhas em comunicação síncrona:</h3>
 - Circuit breaker.
 - Cache.
 
-Falhas em comunicação assíncrona:
+<h3>Falhas em comunicação assíncrona:</h3>
 - Simples Retry.
 - Retry com back-off.
 - Fila de mensagens mortas.
 - Mensagens devem poder ser lidas fora de ordem.
 - Mensagens devem poder ser recebidas repetidamente (idempotência).
 
-Autenticação:
+<h3>Autenticação:</h3>
 - Cada requisição deve informar quem é o cliente. A partir dessa informação, nossa aplicação pode decidir se a operação será realizada ou não.
 
-Técnicas de autenticação:
+<h3>Técnicas de autenticação:</h3>
 - Basic HTTP.
 - Tokens (JWT).
 - OAuth.
 - OpenID Connect.
 
-Release pipeline:
+<h3>Release pipeline:</h3>
 - Uma release pipeline é uma linha de processos executados para gerar a entrega de um projeto.
 - Nesta pipeline podem estar processos de build, verificações, testes, etc.
 
-O microsserviço pode ser implantado em vários ambientes:
+<h3>O microsserviço pode ser implantado em vários ambientes:</h3>
 - Desenvolvimento.
 - Staging / QA:
 	<ul>
@@ -95,7 +95,7 @@ O microsserviço pode ser implantado em vários ambientes:
 	<li>Por região.</li>
 	</ul>
 
-Configurações parametrizadas:
+<h3>Configurações parametrizadas:</h3>
 - Configurações do ambiente em si:
 	<ul>
 	<li>Quantidade de recursos.</li>
@@ -108,7 +108,7 @@ Configurações parametrizadas:
 	<li>Dados de acesso.</li>
 	</ul>
 
-Estratégias de releases:
+<h3>Estratégias de releases:</h3>
 - Rolling upgrade.
 - Blue-green.
 - Feature toggle.
